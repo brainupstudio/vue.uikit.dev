@@ -5,6 +5,9 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+UIkit.use(Icons);
 
 export default {
   name: 'App',
@@ -15,6 +18,9 @@ export default {
 </script>
 
 <style lang="less">
+@import "../node_modules/uikit/src/less/uikit.less";
+@import "./assets/less/theme.less";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
