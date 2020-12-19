@@ -1,4 +1,4 @@
-# vue3
+# Vue + UIKit
 
 ## Project setup
 ```
