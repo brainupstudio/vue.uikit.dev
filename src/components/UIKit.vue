@@ -50,7 +50,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div class="uk-card-media-bottom">
-            <img src="../assets/images/light.jpg" alt="">
+            <img src="../assets/images/dark.jpg" alt="">
           </div>
         </div>
       </div>
