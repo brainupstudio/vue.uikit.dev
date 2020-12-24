@@ -22,11 +22,11 @@ export default {
   methods: {
     createOrUpdate: async function(task) {
       await api.updatetask(task);
-      this.$flashMessage.show({
-        type: 'error',
-        title: 'Error Message Title',
-        message: 'task updated sucessfully!'
-      });
+      // this.$flashMessage.show({
+      //   type: 'error',
+      //   title: 'Error Message Title',
+      //   message: 'task updated sucessfully!'
+      // });
       await this.$router.push(`/tasks/${task._id}`);
     }
   },

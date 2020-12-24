@@ -16,23 +16,25 @@
 </template>
 
 <script>
-// import { api } from '@/helpers/helpers';
+import { api } from '@/helpers/helpers';
 
 export default {
   name: 'task-form',
   data() {
     return {
-      errorsPresent: false,
-      task: {}
+      //errorsPresent: false,
+      task: {},
     };
   },
-  // async created() {
-  //   this.task = await api.gettask(this.$route.params.id);
-  // },
+  async mounted() {
+    if (this.$route.params.id) {
+    this.task = await api.gettask(this.$route.params.id);
+    }
+  },
   methods: {
     onSubmit: function() {
       if (this.task.message === '') {
-        this.errorsPresent = true;
+        // this.errorsPresent = true;
       } else {
         this.$emit('createOrUpdate', this.task);
       }

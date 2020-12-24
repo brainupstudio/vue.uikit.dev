@@ -16,11 +16,11 @@ export default {
   methods: {
     createOrUpdate: async function(task) {
       const res = api.createtask(task);
-      this.$flashMessage.show({
-        type: 'success',
-        title: 'Task created',
-        message: 'task created sucessfully!'
-      });
+      // this.$flashMessage.show({
+      //   type: 'success',
+      //   title: 'Task created',
+      //   message: 'task created sucessfully!'
+      // });
       await this.$router.push(`/tasks/${res._id}`);
     }
   }

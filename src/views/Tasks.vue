@@ -37,11 +37,11 @@ export default {
       const sure = window.confirm('Are you sure?');
       if (!sure) return;
       await api.deletetask(id);
-      this.$flashMessage.show({
-        type: 'success',
-        title: 'Task deleted',
-        message: 'task deleted sucessfully!'
-      });
+      // this.$flashMessage.show({
+      //   type: 'success',
+      //   title: 'Task deleted',
+      //   message: 'task deleted sucessfully!'
+      // });
       const newtasks = this.tasks.filter(task => task._id !== id);
       this.tasks = newtasks;
     }
