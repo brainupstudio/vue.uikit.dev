@@ -8,11 +8,17 @@
             <a href="#">MENU</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active">
-                  <router-link to="/">Home</router-link>
+<!--                <li class="uk-active">-->
+<!--                  <router-link to="/">Home</router-link>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  <router-link to="/about">About</router-link>-->
+<!--                </li>-->
+                <li>
+                  <router-link to="/tasks">Tasks</router-link>
                 </li>
                 <li>
-                  <router-link to="/about">About</router-link>
+                  <router-link to="/tasks/new">New task</router-link>
                 </li>
               </ul>
             </div>

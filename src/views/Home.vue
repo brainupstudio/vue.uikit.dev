@@ -11,7 +11,7 @@ import UIKit from '@/components/UIKit.vue'
 export default {
   name: 'Home',
   components: {
-    UIKit
+    UIKit,
   }
 }
 </script>
